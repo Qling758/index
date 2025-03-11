@@ -177,22 +177,21 @@
     <iframe src="demngay.html" width="100%" height="100%" frameborder="0"></iframe>
 </div>
 <script>
-function sendMessageToParent() {
-    window.parent.postMessage('showActionButtons', '*'); // Gửi tin nhắn lên parent (index.html)
-}
-
-window.addEventListener('message', function(event) {
-    // Kiểm tra nếu message được gửi từ demngay.html
-    if (event.data === 'showActionButtons') {
-        showActionButtons(); // Gọi hàm để quay lại trang chính
+    window.addEventListener('message', function(event) {
+        // Kiểm tra xem tin nhắn có đến từ đúng `origin` hay không
+        if (event.origin !== "https://qling758.github.io/index/") return;
+    
+        if (event.data === 'showActionButtons') {
+            showActionButtons(); // Gọi hàm hiển thị trang index
+        }
+    });
+    
+    function showActionButtons() {
+        document.getElementById("demngay-container").style.display = "none";
+        document.querySelector("main").style.display = "block";
     }
-});
-
-function showActionButtons() {
-    document.getElementById("demngay-container").style.display = "none"; 
-    document.querySelector("main").style.display = "block";
-}
-</script>
+    </script>
+    
 
 <script>
 document.querySelector(".btn-class-name").addEventListener("click", function (event) {

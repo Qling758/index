@@ -48,14 +48,13 @@
             <!-- 7. Tiêu đề bên dưới -->
             <footer>💕 Cảm ơn vì khoảng thời gian ta bên nhau 💕</footer>
       </div> 
-<button onclick="sendMessageToParent()">Quay lại</button>
+      <button onclick="sendMessageToParent()">Quay lại</button>
 
-<script>
-function sendMessageToParent() {
-    window.parent.postMessage('showActionButtons', '*'); // Gửi tin nhắn lên parent (index.html)
-}
-</script>
-
+      <script>
+      function sendMessageToParent() {
+          window.parent.postMessage('showActionButtons', 'https://qling758.github.io/index/'); // Thay đúng địa chỉ domain của bạn
+      }
+      </script>
       <script src="app.js"></script>
 		<script src="a.js"></script>
 
