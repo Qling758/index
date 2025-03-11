@@ -176,18 +176,6 @@
 <div id="demngay-container" style="display: none;">
     <iframe src="demngay.html" width="100%" height="100%" frameborder="0"></iframe>
 </div>
-<script>
-window.addEventListener('message', function(event) {
-    if (event.origin !== window.location.origin) return; // Chặn nguồn không mong muốn
-    if (event.data === 'showActionButtons') {
-        showActionButtons();
-    }
-});
-function showActionButtons() {
-    document.getElementById("demngay-container").style.display = "none"; 
-    document.querySelector("main").style.display = "block";
-}
-    </script>
     
 
 <script>
