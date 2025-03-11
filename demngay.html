@@ -51,9 +51,9 @@
       <button onclick="sendMessageToParent()">Quay lại</button>
 
       <script>
-      function sendMessageToParent() {
-          window.parent.postMessage('showActionButtons', 'https://qling758.github.io/index/'); // Thay đúng địa chỉ domain của bạn
-      }
+function sendMessageToParent() {
+    window.parent.postMessage('showActionButtons', window.location.origin);
+}
       </script>
       <script src="app.js"></script>
 		<script src="a.js"></script>
