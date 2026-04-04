@@ -4,5 +4,5 @@
 [c] [FFFFFF]
 [c] [FFFFFF] 
 [c] [00FF00]━━━━━━━━━━━━━━━━━━━━━━
-[c] [FFFFFF]Tắt ProxyPin Đi Thằng Lồn
+[c] [FFFFFF]Tắt ProxyPin Đi các tướng
 [c] [00FF00]━━━━━━━━━━━━━━━━━━━━━━
